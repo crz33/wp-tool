@@ -1,0 +1,22 @@
+{
+    // pythonの環境設定
+    "python.pythonPath": ".venv/bin/python",
+    "files.watcherExclude": {
+        "**/.venv/**": true
+    },
+    // リンタの設定
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E203,W503,W504"
+    ],
+    // フォーマッタの設定
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+}
